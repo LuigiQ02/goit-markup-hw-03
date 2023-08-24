@@ -30,7 +30,6 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-
 .section__container{
     width: 1158px;
     padding: 0 15px;
@@ -45,7 +44,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-
 }
 .section__container__buttons{
     width: 1158px;
@@ -56,8 +54,6 @@ body{
     column-gap: 24px;
     justify-content: center;
 }
-
-
 .nav{
     display: inline-flex;
 }
@@ -134,7 +130,6 @@ body{
 }
 .hero__title{
     color: var(--white);
-    text-align: center;
     font-size: 56px;
     line-height: 60px;
     letter-spacing: 1.12px;
@@ -315,16 +310,26 @@ body{
 }
 
 /* Portfolio Section-01 */
-
 .section__abt__list{
     display: inline-flex;
-    flex-wrap: wrap;
     align-content: center;
     column-gap: 24px;
     padding-top: 72px;
     padding-bottom: 120px;
+    flex-wrap: wrap;
 }
 
+.section__abt__items{
+    border: 1px solid var(--cornflower, #E7E9FC);
+    background: var(--white, #FFF);
+    max-width: 360px;
+    margin-bottom: 48px;
+}
+
+.section__abt__items img{
+    max-width: 100%;
+    height: auto;
+}
 .section__abt__title{
     font-size: 20px;
     font-weight: 500;
@@ -333,6 +338,7 @@ body{
     color: var(--navy);
     padding-top: 32px;
     padding-bottom: 8px;
+    padding-left: 16px;
 }
 
 .section__abt__txt{
@@ -341,5 +347,6 @@ body{
     font-size: 16px;
     color: var(--slate);
     padding-bottom: 32px;
+    padding-left: 16px;
 }
 
