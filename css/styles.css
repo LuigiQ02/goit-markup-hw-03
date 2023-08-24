@@ -310,6 +310,11 @@ body{
 }
 
 /* Portfolio Section-01 */
+
+.nav__header{
+    border: 1px solid var(--cornflower, #E7E9FC);
+    background: var(--white, #FFF);
+}
 .section__abt__list{
     display: inline-flex;
     align-content: center;
