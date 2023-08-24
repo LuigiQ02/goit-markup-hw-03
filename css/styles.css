@@ -23,6 +23,10 @@
     --green: #31d8aa;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -35,19 +39,31 @@ body{
 }
 
 .nav__container{
+    display: flex;
     width: 1158px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
+
+}
+.section__container__buttons{
+    width: 1158px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    column-gap: 24px;
+    justify-content: center;
 }
 
+
 .nav{
-    display: inline-block;
+    display: inline-flex;
 }
 
 .nav__logo{
     text-decoration: none;
-    margin-right: 76px;
 }
 .nav__web{
     color: var(--iris);
@@ -80,17 +96,11 @@ body{
 .address__link:hover {
     color: var(--ocean);
 }
- .nav__item{
-    display: inline-block;
-    margin-right: 40px;
- }
-
- .nav__item:last-child{
-    margin-right: 0;
- }
 
  .nav__list{
-    display: inline-block;
+    display: inline-flex;
+    margin-left: 76px;
+    column-gap: 40px;
  }
 
 .address__link{
@@ -104,13 +114,16 @@ body{
 
 .address{
     display: inline-block;
+    padding-left: 0;
+    margin-left: auto;
 }
+
 .address__list{
-    display: inline-block;
+    display: inline-flex;
+    column-gap: 40px;
 }
 .address__item{
     display: inline-block;
-    margin-right: 40px;
 }
 
 /* Hero Section */
@@ -150,7 +163,12 @@ body{
 
 .features{
     padding: 120px 0;
+}
 
+.features__list{
+    display: inline-flex;
+    justify-content: center;
+    column-gap: 24px;
 }
 .features__head{
     color: var(--navy);
@@ -169,10 +187,6 @@ body{
 }
 
 /* Second Section */
-
-.section__tech{
-    padding: 120px 0;
-}
 .section__tech__head{
     color: var(--navy);
     text-align: center;
@@ -180,12 +194,24 @@ body{
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    padding-bottom: 72px;
+}
+
+.section__tech__list{
+    display: inline-flex;
+    column-gap: 24px;
+    padding-bottom: 120px;
 }
 
 /* Third Section */
 .team{
     background-color: var(--cloud);
     padding: 120px 0;
+}
+
+.team__list{
+    display: inline-flex;
+    column-gap: 24px;
 }
 
 .team__head2{
@@ -195,6 +221,7 @@ body{
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    padding-bottom: 72px;
 }
 
 .team__name{
@@ -204,6 +231,8 @@ body{
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.4px;
+    padding-top: 32px;
+    padding-bottom: 8px;
 }
 .team__text{
     color: var(--slate);
@@ -211,6 +240,8 @@ body{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
+    padding-bottom: 32px;
+    padding-top: 8px;
 }
 
 /* Footer Section */
@@ -254,7 +285,6 @@ body{
 /* Buttons Section Portfolio */
 
 .btn__container{
-    display: inline-block   ;
     background-color: var(--cloud);
     outline: none;
     padding: 12px 24px;
