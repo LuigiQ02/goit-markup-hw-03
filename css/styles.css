@@ -54,6 +54,20 @@ body{
     column-gap: 24px;
     justify-content: center;
 }
+
+.hero__container{
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin: 0 472px;
+}
+
+.section__footer__container{
+    width: 1158px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 101.5px;
+}
 .nav{
     display: inline-flex;
 }
@@ -126,7 +140,6 @@ body{
 .hero{
     background-color: var(--navy);
     text-align: center;
-    padding: 188px 472px 292px 472px;
 }
 .hero__title{
     color: var(--white);
@@ -243,6 +256,7 @@ body{
 /* Footer Section */
 .footer{
     background-color: var(--navy);
+    height: 312px;
 }
 
 .footer__link{
@@ -274,6 +288,7 @@ body{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
+    padding-top: 17.5px;
 }
 
 
