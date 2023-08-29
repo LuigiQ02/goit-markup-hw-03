@@ -359,8 +359,9 @@ img{
     background: #FFF;
 }
 .section__abt__list{
-    display: inline-flex;
+    display: flex;
     align-content: center;
+    justify-content: space-between;
     padding-top: 72px;
     padding-bottom: 120px;
     flex-wrap: wrap;
